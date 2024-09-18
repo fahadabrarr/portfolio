@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Use Tailwind's preflight to handle resets */
+body {
+  @apply bg-zinc-900 text-zinc-50;
+}
