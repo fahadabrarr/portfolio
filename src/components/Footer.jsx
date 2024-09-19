@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex fixed bottom-0 left-0 w-full  items-center z-40 bg-header_bg pb-10">
+    <footer className="flex md:mt-10  left-0 w-full  items-center z-40 bg-header_bg pb-10">
       <div className="max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center mt-8 flex-1 flex-col md:flex-row ">
         <div className="">
           <img
