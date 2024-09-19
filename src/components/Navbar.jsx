@@ -1,29 +1,30 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const navItems = [
   {
     label: "Home",
-    path: "#home",
+    path: "/",
     className: "nav-link",
   },
   {
     label: "Project",
-    path: "#project",
+    path: "/project",
     className: "nav-link",
   },
   {
     label: "Service",
-    path: "#service",
+    path: "/service",
     className: "nav-link",
   },
   {
     label: "About",
-    path: "#about",
+    path: "/about",
     className: "nav-link",
   },
   {
     label: "Contact",
-    path: "#contact",
+    path: "/contact",
     className: "nav-link",
   },
 ];
@@ -31,28 +32,24 @@ const navItems = [
 const Navbar = () => {
   const [path, setPath] = useState("#home");
   return (
-    <ul className="flex flex-row space-x-4">
+    <nav className="flex flex-row space-x-4">
       {navItems.map((item, idx) => {
         return (
-          <li
+          <NavLink
+            to={item.path}
             key={idx}
             className={`${
               path === item.path
                 ? " hover:text-hover border-b-2 border-hover transition-opacity duration-500"
                 : "text-white transition-all"
             }`}
+            onClick={() => setPath(item.path)}
           >
-            <a
-              href={item.path}
-              className={item.className}
-              onClick={() => setPath(item.path)}
-            >
-              {item.label}
-            </a>
-          </li>
+            {item.label}
+          </NavLink>
         );
       })}
-    </ul>
+    </nav>
   );
 };
 
