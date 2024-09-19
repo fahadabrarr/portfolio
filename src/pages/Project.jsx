@@ -134,7 +134,7 @@ const Project = () => {
             </h3>
           </div>
         </div>
-        <div className=" flex flex-col md:grid items-center justify-center gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 py-3 px-3 mx-auto">
+        <div className=" flex flex-col md:grid items-center justify-center gap-6 md:grid-cols-3 lg:grid-cols-4 md:gap-8 py-3 px-3 mx-auto">
           {projects.map((item, idx) => {
             return (
               <div

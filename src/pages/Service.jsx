@@ -41,12 +41,12 @@ const Service = () => {
             </h3>
           </div>
         </div>
-        <div className=" flex flex-col md:grid items-center justify-center gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 py-3 px-3 mx-auto">
+        <div className=" flex flex-col md:grid items-center justify-center md:w-2/3 lg:w-full gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 py-3 px-3 mx-auto">
           {services.map((item, idx) => {
             return (
               <div
                 key={idx}
-                className="flex flex-col gap-3 md:gap-3 py-2 px-2 group border border-accent-hover rounded-lg hover:shadow-[4px_4px_#000] cursor-pointe hover:bg-zinc-950 hover:-translate-y-1 duration-500 group-hover:text-white items-center mx-auto max-w-[250px] h-[400px]"
+                className="flex flex-col gap-3 md:gap-3 py-2 px-2 group border border-accent-hover rounded-lg hover:shadow-[4px_4px_#000] cursor-pointe hover:bg-zinc-950 hover:-translate-y-1 duration-500 group-hover:text-white items-center mx-auto max-w-[250px] h-[350px] relative"
               >
                 <div className="flex justify-between items-center font-extrabold group-hover:text-primary">
                   <img
@@ -55,7 +55,7 @@ const Service = () => {
                     className="rounded-full w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
                   />
                 </div>
-                <h2 className="font-semibold text-2xl text-center group-hover:text-white ">
+                <h2 className="font-semibold text-2xl text-center group-hover:text-white bottom-0 p-4 absolute ">
                   {item.title}
                 </h2>
               </div>

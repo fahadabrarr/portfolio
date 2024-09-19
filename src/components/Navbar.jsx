@@ -40,8 +40,8 @@ const Navbar = () => {
             key={idx}
             className={`${
               path === item.path
-                ? " hover:text-hover border-b-2 border-hover transition-opacity duration-500"
-                : "text-white transition-all"
+                ? " hover:text-hover border-b-2 transition-opacity duration-500"
+                : "text-white border-b-2 border-transparent transition-all"
             }`}
             onClick={() => setPath(item.path)}
           >

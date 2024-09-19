@@ -19,13 +19,13 @@ const info = [
 
 const contact = () => {
   return (
-    <section className="max-w-screen-2xl mt-12 md:mt-16 w-full mx-auto px-4">
-      <div className=" flex flex-col items-center justify-center">
-        <div className="flex flex-col px-10 pt-10 rounded-xl items-center justify-center">
+    <section className="max-w-screen-2xl mt-12 md:mt-16 w-full mx-auto px-4 min-h-screen">
+      <div className=" flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col px-10 pt-10 rounded-xl items-center justify-center ">
           <h3 className="text-4xl text-accent-hover">{`Let's work together`}</h3>
         </div>
-        <div className="flex flex-col w-full xl:gap-8 lg:flex-row  mx-auto justify-items-center pt-10">
-          <div className="md:h-[54%] w-full lg:w-2/3  order-2 lg:order-none">
+        <div className="flex flex-col w-full xl:gap-8 lg:flex-row  mx-auto items-center justify-items-center pt-10 relative">
+          <div className="md:h-[55%] w-2/3 lg:w-3/5 px-5 order-2 mb-5 mx-5 lg:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#24272c] rounded-xl">
               <h3 className="text-4xl text-accent-hover">Send Message</h3>
 
@@ -38,7 +38,7 @@ const contact = () => {
                 <input
                   type="lastname"
                   placeholder="Last Name"
-                  className="flex h-[48px]  rounded-md border-white/10 focus:border-accent-hover font-light bg-primary px-4 py-5 text-base placeholder:text-white/60 outline-none"
+                  className="flex h-[48px] rounded-md border-white/10 focus:border-accent-hover font-light bg-primary px-4 py-5 text-base placeholder:text-white/60 outline-none"
                 />
                 <input
                   type="email"
@@ -52,7 +52,10 @@ const contact = () => {
                 />
               </div>
               <div>
-                <textarea className="flex min-h-[80px] w-full rounded-md border border-white/10 bg-primary px-4 py-5 placeholder:text-white/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent-hover focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                <textarea
+                  placeholder="plz provide some info through this message"
+                  className="flex min-h-[80px] w-full rounded-md border border-white/10 bg-primary px-4 py-5 placeholder:text-white/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent-hover focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"
+                ></textarea>
               </div>
 
               <button className="w-full rounded-md border border-white/10 bg-primary px-4 py-3 hover:bg-hover hover:font-semibold transition-opacity duration-500">
@@ -61,14 +64,14 @@ const contact = () => {
             </form>
           </div>
 
-          <div className="flex-1 items-center w-full lg:w-1/3 justify-between md:h-[54%] order-1 pt-5 xl:order-none mb-8 md:mb-0">
-            <div className="flex justify-between flex-col items-center font-extrabold">
+          <div className="flex-1 items-center w-full h-full lg:w-1/3 justify-between md:h-[54%] order-1 xl:order-none mb-8 md:mb-0">
+            <div className="flex justify-between flex-col items-center font-extrabold md:mb-0">
               <img
                 src={"service.svg"}
                 alt=""
                 className="rounded-full w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
               />
-              <div className="flex-1 items-center justify-center">
+              <div className="flex-1 items-center pb-5 justify-center">
                 {info.map((item, idx) => {
                   return (
                     <div
