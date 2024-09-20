@@ -9,8 +9,8 @@ import TeckStak from "../components/TeckStak";
 
 const Home = () => {
   return (
-    <section className=" max-w-screen-2xl mt-12 md:mt-16 w-full mx-auto px-4">
-      <div className="mx-auto md:min-h-[760px] p-5 max-w-screen-2xl ">
+    <section className=" max-w-screen-2xl w-full mx-auto px-4">
+      <div className="mx-auto p-5 max-w-screen-2xl ">
         <div className="flex flex-col xl:flex-row w-full justify-between px-5 items-center md:min-h-[600px]">
           <div className="gap-3 text-center xl:text-left order-2 xl:order-none items-center justify-center md:justify-start p-5">
             <p className="text-xl text-hover">*</p>
@@ -42,11 +42,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-2xl">
+      <div className="max-w-screen-2xl flex flex-1 flex-col">
         <TeckStak />
       </div>
-      <Service />
       <Project />
+      <Service />
       <Contact />
     </section>
   );
