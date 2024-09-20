@@ -1,21 +1,24 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+088)-01723 565 656",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "fahad@gamil.com",
-  },
-  {
-    icon: <FaMapMarkedAlt />,
-    title: "Address",
-    description: "Mirpur-1, Dhaka",
-  },
-];
+import ContactForm from "../components/ContactForm";
+import ContactInfo from "../components/ContactInfo";
+
+// const info = [
+//   {
+//     icon: <FaPhoneAlt />,
+//     title: "Phone",
+//     description: "(+088)-01723 565 656",
+//   },
+//   {
+//     icon: <FaEnvelope />,
+//     title: "Email",
+//     description: "fahad@gamil.com",
+//   },
+//   {
+//     icon: <FaMapMarkedAlt />,
+//     title: "Address",
+//     description: "Mirpur-1, Dhaka",
+//   },
+// ];
 
 const contact = () => {
   return (
@@ -26,7 +29,8 @@ const contact = () => {
         </div>
         <div className="flex flex-col w-full xl:gap-8 lg:flex-row  mx-auto items-center justify-items-center pt-10 relative">
           <div className="md:h-[55%] w-2/3 lg:w-3/5 px-5 order-2 mb-5 mx-5 lg:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#24272c] rounded-xl">
+            *{" "}
+            {/* <form className="flex flex-col gap-6 p-10 bg-[#24272c] rounded-xl">
               <h3 className="text-4xl text-accent-hover">Send Message</h3>
 
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
@@ -61,17 +65,18 @@ const contact = () => {
               <button className="w-full rounded-md border border-white/10 bg-primary px-4 py-3 hover:bg-hover hover:font-semibold transition-opacity duration-500">
                 SEND MESSAGE
               </button>
-            </form>
+            </form> */}
+            <ContactForm />
           </div>
 
           <div className="flex-1 items-center w-full h-full lg:w-1/3 justify-between md:h-[54%] order-1 xl:order-none mb-8 md:mb-0">
             <div className="flex justify-between flex-col items-center font-extrabold md:mb-0">
-              <img
+              {/* <img
                 src={"service.svg"}
                 alt=""
                 className="rounded-full w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
-              />
-              <div className="flex-1 items-center pb-5 justify-center">
+              />  */}
+              {/* <div className="flex-1 items-center pb-5 justify-center">
                 {info.map((item, idx) => {
                   return (
                     <div
@@ -87,7 +92,9 @@ const contact = () => {
                     </div>
                   );
                 })}
-              </div>
+              </div> */}
+
+              <ContactInfo />
             </div>
           </div>
         </div>

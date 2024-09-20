@@ -5,6 +5,7 @@ import Social from "../components/Socials";
 import Service from "../pages/Service";
 import Project from "../pages/Project";
 import Contact from "./Contact";
+import TeckStak from "../components/TeckStak";
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <span className="uppercase items-center border border-accent-default rounded-lg px-3 py-1">
+              <span className="uppercase items-center border hover:bg-hover hover:text-primary rounded-lg px-3 py-1">
                 Download CV
               </span>
               <div className="mb-8 xl:mb-0">
@@ -40,6 +41,9 @@ const Home = () => {
             <Photo />
           </div>
         </div>
+      </div>
+      <div className="max-w-screen-2xl">
+        <TeckStak />
       </div>
       <Service />
       <Project />

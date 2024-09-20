@@ -14,7 +14,7 @@ const Social = () => {
           <NavLink
             to={item.path}
             key={idx}
-            className="border border-accent-default h-10 w-10 flex justify-center items-center rounded-lg text-white hover:text-primary hover:bg-accent-hover transition-all duration-500"
+            className="border h-10 w-10 flex justify-center items-center rounded-lg text-white hover:text-hover hover:bg-zinc-950 transition-all duration-500"
           >
             {item.icon}
           </NavLink>
