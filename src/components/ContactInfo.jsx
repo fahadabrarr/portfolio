@@ -20,13 +20,19 @@ const info = [
 const ContactInfo = () => {
   return (
     <div className="flex justify-between flex-col items-center font-extrabold md:mb-0">
-      <img
-        src={"service.svg"}
-        alt=""
-        className="rounded-lg w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
-      />
+      <div className="flex flex-col items-center justify-center">
+        <img
+          src="service.svg"
+          alt=""
+          className=" rounded-lg w-[350px] h-[350px] mx-auto mix-blend-lighten"
+        />
+        <h1 className="text-hover font-thin px-5 pb-5 text-2xl">
+          {" "}
+          {` ----- lets work together -----`}{" "}
+        </h1>
+      </div>
 
-      <div className="flex-1 items-center pb-5 justify-center">
+      {/* <div className="flex-1 items-center pb-5 justify-center">
         {info.map((item, idx) => {
           return (
             <div
@@ -42,7 +48,7 @@ const ContactInfo = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

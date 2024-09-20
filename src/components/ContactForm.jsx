@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <form className="flex flex-col gap-6 p-3 w-2/3 items-center justify-center md:p-10 bg-[#24272c] rounded-xl">
+    <form className="flex flex-col gap-6 p-3 w-full md:w-2/3 items-center justify-center md:p-10 bg-[#24272c] rounded-xl">
       <h3 className="text-2xl md:text-4xl text-hover text-center">
         Send Message
       </h3>

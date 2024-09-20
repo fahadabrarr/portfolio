@@ -22,8 +22,13 @@ const TeckStak = () => {
   return (
     <div className="items-center justify-center gap-3 sm:gap-5 py-3 mx-auto">
       <div className="text-center font-thin pb-4">
-        <p className="text-center uppercase font-thin p-1 text-hover">tools</p>
-        <p className="">I commonly work with</p>
+        <h1 className="text-hover font-thin px-5 pb-2 text-2xl">
+          {" "}
+          {` ----- MY TOOLS -----`}{" "}
+        </h1>
+        <p className="text-hover font-thin px-5 pb-2">
+          ------- I COMMONLY WORK WITH -------
+        </p>
       </div>
 
       <div className="flex items-center justify-center gap-3 sm:gap-5 py-3 mx-auto">

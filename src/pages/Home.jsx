@@ -1,13 +1,13 @@
 import React from "react";
 import Photo from "../components/Photo";
 import Social from "../components/Socials";
-import Service from "../pages/Service";
-import Project from "../pages/Project";
-import Contact from "./Contact";
 import TeckStak from "../components/TeckStak";
 import ProjectCom from "../components/ProjectCom";
 import ProjectComImg from "../components/ProjectComImg";
 import ServiceComp from "../components/ServiceComp";
+import ServiceCompImg from "../components/ServiceCompImg";
+import ContactForm from "../components/ContactForm";
+import ContactInfo from "../components/ContactInfo";
 
 const Home = () => {
   return (
@@ -47,19 +47,21 @@ const Home = () => {
       <div className="max-w-screen-2xl flex flex-1 flex-col">
         <TeckStak />
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 pb-5 md:pb-10">
         <ProjectComImg />
         <ProjectCom />
       </div>
-      {/* <Project /> */}
-      <div className="mt-20">
-        <ServiceComp />
 
-        {/* <Service /> */}
+      <div className="flex flex-col gap-5">
+        <ServiceCompImg />
+        <ServiceComp />
       </div>
-      <Contact />
+
+      <div className="max-w-screen-2xl flex flex-1 gap-3 py-5 md:py-10 flex-col items-center justify-center">
+        <ContactInfo />
+        <ContactForm />
+      </div>
     </section>
   );
 };
-
 export default Home;
