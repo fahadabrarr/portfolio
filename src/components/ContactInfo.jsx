@@ -23,7 +23,7 @@ const ContactInfo = () => {
       <img
         src={"service.svg"}
         alt=""
-        className="rounded-full w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
+        className="rounded-lg w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] mx-auto mix-blend-lighten p-5"
       />
 
       <div className="flex-1 items-center pb-5 justify-center">

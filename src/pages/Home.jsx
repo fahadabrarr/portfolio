@@ -1,15 +1,17 @@
 import React from "react";
 import Photo from "../components/Photo";
 import Social from "../components/Socials";
-
 import Service from "../pages/Service";
 import Project from "../pages/Project";
 import Contact from "./Contact";
 import TeckStak from "../components/TeckStak";
+import ProjectCom from "../components/ProjectCom";
+import ProjectComImg from "../components/ProjectComImg";
+import ServiceComp from "../components/ServiceComp";
 
 const Home = () => {
   return (
-    <section className=" max-w-screen-2xl w-full mx-auto px-4">
+    <section className=" max-w-screen-2xl w-full mx-auto px-4 mt-16">
       <div className="mx-auto p-5 max-w-screen-2xl ">
         <div className="flex flex-col xl:flex-row w-full justify-between px-5 items-center md:min-h-[600px]">
           <div className="gap-3 text-center xl:text-left order-2 xl:order-none items-center justify-center md:justify-start p-5">
@@ -20,7 +22,7 @@ const Home = () => {
               Hello i'm <br />
               <span className="text-hover ">Fahad Abrar</span>
             </h1>
-            <span className="text-xl">Data Enthusisat</span>
+            <span className="text-xl">Data Enthusiast</span>
             <div className="text-xl mb-3">Backend Developer</div>
             <p className="max-w-[500px] mb-9 text-white/80">
               {" "}
@@ -45,8 +47,16 @@ const Home = () => {
       <div className="max-w-screen-2xl flex flex-1 flex-col">
         <TeckStak />
       </div>
-      <Project />
-      <Service />
+      <div className="flex flex-col gap-5">
+        <ProjectComImg />
+        <ProjectCom />
+      </div>
+      {/* <Project /> */}
+      <div className="mt-20">
+        <ServiceComp />
+
+        {/* <Service /> */}
+      </div>
       <Contact />
     </section>
   );

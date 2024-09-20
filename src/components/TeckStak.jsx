@@ -11,7 +11,7 @@ const webTools = [
   { name: "python", icon: "python.svg" },
   { name: "django", icon: "django.svg" },
   { name: "kafka", icon: "kafka.svg" },
-  { name: "flask", icon: "flask.svg" },
+  { name: "prisma", icon: "prisma.svg" },
   { name: "rabbitmq", icon: "rabbitmq.svg" },
   { name: "redis", icon: "redis.svg" },
   { name: "mysql", icon: "mysql.svg" },
@@ -21,9 +21,10 @@ const webTools = [
 const TeckStak = () => {
   return (
     <div className="items-center justify-center gap-3 sm:gap-5 py-3 mx-auto">
-      <p className="text-center pb-3">
-        tools <br /> preferly I used
-      </p>
+      <div className="text-center font-thin pb-4">
+        <p className="text-center uppercase font-thin p-1 text-hover">tools</p>
+        <p className="">I commonly work with</p>
+      </div>
 
       <div className="flex items-center justify-center gap-3 sm:gap-5 py-3 mx-auto">
         {tools.map((item, idx) => {
