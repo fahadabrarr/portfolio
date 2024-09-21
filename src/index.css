@@ -4,5 +4,5 @@
 
 /* Use Tailwind's preflight to handle resets */
 body {
-  @apply bg-zinc-900 text-zinc-50 scroll-smooth md:scroll-auto;
+  @apply bg-bg text-zinc-50 scroll-smooth md:scroll-auto;
 }

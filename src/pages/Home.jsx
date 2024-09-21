@@ -15,23 +15,28 @@ const Home = () => {
       <div className="mx-auto p-5 max-w-screen-2xl ">
         <div className="flex flex-col xl:flex-row w-full justify-between px-5 items-center md:min-h-[600px]">
           <div className="gap-3 text-center xl:text-left order-2 xl:order-none items-center justify-center md:justify-start p-5">
-            <p className="text-xl text-hover">*</p>
-            <p className="text-xl text-hover">**</p>
-            <p className="text-xl text-hover mb-3">***</p>
+            <p className="text-xl text-text_highlight">*</p>
+            <p className="text-xl text-text_highlight">**</p>
+            <p className="text-xl text-text_highlight mb-3">***</p>
             <h1 className="text-4xl mb-6">
               Hello i'm <br />
-              <span className="text-hover ">Fahad Abrar</span>
+              <span className="text-text_highlight ">Fahad Abrar</span>
             </h1>
-            <span className="text-xl">Data Enthusiast</span>
-            <div className="text-xl mb-3">Backend Developer</div>
+            <span className="text-2xl text-[#B43F3F]">Data Enthusiast</span>
+            <div className="text-2xl mb-3 text-[#B43F3F]">
+              Backend Developer
+            </div>
             <p className="max-w-[500px] mb-9 text-white/80">
-              {" "}
-              I excel at crafting elegant digital experience and I am proficient
-              in various programing language and technologies
+              I am a skilled backend developer and data enthusiast with a strong
+              foundation in designing and implementing scalable and efficient
+              solutions.My expertise spans across modern backend technologies,
+              including Node.js, Express.js, Django REST Framework, Prisma, ML,
+              and Langchain along with experience in managing databases using
+              MongoDB, SQL and Redis.
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <span className="uppercase items-center border hover:bg-hover hover:text-primary rounded-lg px-3 py-1">
+              <span className="uppercase border-[1px] items-center border-text_highlight hover:bg-hover hover:text-white rounded-lg px-3 py-2">
                 Download CV
               </span>
               <div className="mb-8 xl:mb-0">
@@ -39,7 +44,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 xl:order-none">
+          <div className="order-1 xl:order-none bottom-0">
             <Photo />
           </div>
         </div>

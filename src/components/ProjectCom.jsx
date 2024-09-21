@@ -1,125 +1,77 @@
 import { BsGithub } from "react-icons/bs";
 const projects = [
   {
-    num: "01",
-    category: "frontend",
-    title: "Project 1",
+    title: "E-Commerce API",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb1.png",
+
+    image: "ecommerce.svg",
     github: "",
   },
   {
-    num: "02",
-    category: "backend",
-    title: "Project 2",
+    title: "Education Platform API",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb2.png",
+
+    image: "education.svg",
     github: "",
   },
   {
-    num: "03",
-    category: "data science",
-    title: "Project 3",
+    title: "Job Portal API ",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb3.png",
+
+    image: "job_portal.svg",
     github: "",
   },
   {
-    num: "04",
-    category: "data science",
-    title: "Project 4",
+    title: "Price Prediction (ML)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb1.png",
+
+    image: "price_pred.svg",
     github: "",
   },
   {
-    num: "04",
-    category: "data science",
-    title: "Project 4",
+    title: "Recommendation System (ML)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb2.png",
+
+    image: "recommendation.svg",
     github: "",
   },
   {
-    num: "04",
-    category: "data science",
-    title: "Project 4",
+    title: "Review Analysis (ML)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb3.png",
+
+    image: "review.svg",
     github: "",
   },
   {
-    num: "04",
-    category: "data science",
-    title: "Project 4",
+    title: "Question & Answering (LLM",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb1.png",
+
+    image: "question.svg",
     github: "",
   },
   {
-    num: "04",
-    category: "data science",
-    title: "Project 4",
+    title: "News Paper API",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
-    stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "JavaScript" },
-      { name: "React" },
-    ],
-    image: "thumb1.png",
+
+    image: "news.svg",
     github: "",
   },
+  // {
+  //   title: "Portfolio Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
+
+  //   image: "portfolio.svg",
+  //   github: "",
+  // },
 ];
 
 function ProjectCom() {
@@ -129,26 +81,26 @@ function ProjectCom() {
         return (
           <div
             key={idx}
-            className="flex flex-col gap-3 md:gap-3 py-2 px-2 group border w-full  border-accent-hover rounded-lg hover:shadow-[4px_4px_0#00] cursor-pointe hover:bg-zinc-950 hover:-translate-y-1 duration-500 group-hover:text-white items-center mx-auto max-w-[250px] h-[350px]"
+            className="flex flex-col gap-3 md:gap-3 py-2 px-2 group border-[1px] justify-center hover:border-text_highlight w-full bg-slate-950 border-accent-hover rounded-lg hover:shadow-[4px_4px_0#00] cursor-pointe hover:bg-zinc-950 hover:-translate-y-1 duration-500 group-hover:text-white items-center mx-auto max-w-[250px] h-[350px] relative"
           >
+            <a
+              href={item.github}
+              className="flex items-center gap-2 hover:text-hover absolute justify-center top-0 py-2 px-5 rounded-2xl mt-2"
+            >
+              <BsGithub />
+              Link
+            </a>
             <div className="flex justify-between items-center font-extrabold group-hover:text-primary">
               <img
                 src={item.image}
                 alt=""
-                className="rounded-t-3xl w-[250px] h-[250px]  mx-auto mix-blend-lighten p-5"
+                className="rounded-xl w-[250px] h-[250px]  mx-auto mix-blend-lighten p-5"
               />
             </div>
-            <div className="flex-1 flex-col w-full items-end justify-end relative">
-              <h2 className="font-semibold text-2xl text-center group-hover:text-hover ">
+            <div className="flex flex-col w-full items-center justify-end relative">
+              <h2 className=" flex font-semibold text-lg text-center items-center justify-center ">
                 {item.title}
               </h2>
-              <a
-                href={item.github}
-                className="flex items-center gap-2 hover:text-hover absolute left-0 bottom-0 p-3"
-              >
-                <BsGithub />
-                link
-              </a>
             </div>
           </div>
         );

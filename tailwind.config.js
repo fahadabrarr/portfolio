@@ -4,8 +4,11 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1c1c22",
-        hover: "#00e187",
+        hover: "#FF8225",
         header_bg: "#17153B",
+        bg: "#0F0F0F",
+        form_color: "#005B41",
+        text_highlight: "#FF8225",
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
