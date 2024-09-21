@@ -26,29 +26,12 @@ const ContactInfo = () => {
           alt=""
           className=" rounded-lg w-[350px] h-[350px] mx-auto mix-blend-lighten"
         />
-        <h1 className="text-text_highlight font-thin px-5 pb-5 text-2xl">
+        <div className="border-[3px] border-text_highlight w-full"></div>
+        <h1 className="text-text_highlight font-thin px-5 pb-5 text-2xl mt-2">
           {" "}
           {` ----- lets work together -----`}{" "}
         </h1>
       </div>
-
-      {/* <div className="flex-1 items-center pb-5 justify-center">
-        {info.map((item, idx) => {
-          return (
-            <div
-              className="flex flex-row gap-1 items-center justify-start"
-              key={idx}
-            >
-              <div className="items-center justify-center min-w-[100px] font-thin  px-4 py-1">
-                {item.title}
-              </div>
-              <div className="items-center justify-center font-serif font-thin min-w-[100px] px-4 py-1">
-                {item.description}
-              </div>
-            </div>
-          );
-        })}
-      </div> */}
     </div>
   );
 };

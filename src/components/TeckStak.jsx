@@ -63,6 +63,7 @@ const TeckStak = () => {
           );
         })}
       </div>
+      <div className="border-[3px] border-text_highlight w-full my-2"></div>
     </div>
   );
 };

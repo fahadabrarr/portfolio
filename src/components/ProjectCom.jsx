@@ -6,7 +6,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "ecommerce.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/e-commerce",
   },
   {
     title: "Education Platform API",
@@ -14,7 +14,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "education.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/e-learning-platform",
   },
   {
     title: "Job Portal API ",
@@ -22,7 +22,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "job_portal.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/job-portal",
   },
   {
     title: "Price Prediction (ML)",
@@ -30,7 +30,8 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "price_pred.svg",
-    github: "",
+    github:
+      "https://github.com/fahadabrarr/web-scraping-and-computer-price-prediction",
   },
   {
     title: "Recommendation System (ML)",
@@ -38,7 +39,8 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "recommendation.svg",
-    github: "",
+    github:
+      "https://github.com/fahadabrarr/web-scraping-and-outfits-recommendation",
   },
   {
     title: "Review Analysis (ML)",
@@ -46,7 +48,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "review.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/review-sentiment-analysis",
   },
   {
     title: "Question & Answering (LLM",
@@ -54,7 +56,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "question.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/backend-for-pdf-question-answering",
   },
   {
     title: "News Paper API",
@@ -62,7 +64,7 @@ const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error consectetur vitae asperiores, vero mollitia",
 
     image: "news.svg",
-    github: "",
+    github: "https://github.com/fahadabrarr/daily-news-server",
   },
   // {
   //   title: "Portfolio Website",

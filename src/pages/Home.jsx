@@ -22,8 +22,10 @@ const Home = () => {
               Hello i'm <br />
               <span className="text-text_highlight ">Fahad Abrar</span>
             </h1>
-            <span className="text-2xl text-[#B43F3F]">Data Enthusiast</span>
-            <div className="text-2xl mb-3 text-[#B43F3F]">
+            <span className="text-2xl text-text_highlight">
+              Data Enthusiast
+            </span>
+            <div className="text-2xl mb-3 text-text_highlight">
               Backend Developer
             </div>
             <p className="max-w-[500px] mb-9 text-white/80">
@@ -55,11 +57,13 @@ const Home = () => {
       <div className="flex flex-col gap-5 pb-5 md:pb-10">
         <ProjectComImg />
         <ProjectCom />
+        <div className="border-[3px] border-text_highlight w-full my-2"></div>
       </div>
 
       <div className="flex flex-col gap-5">
         <ServiceCompImg />
         <ServiceComp />
+        <div className="border-[3px] border-text_highlight w-full my-2"></div>
       </div>
 
       <div className="max-w-screen-2xl flex flex-1 gap-3 py-5 md:py-10 flex-col items-center justify-center">

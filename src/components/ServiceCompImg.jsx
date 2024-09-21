@@ -7,7 +7,8 @@ const ServiceCompImg = () => {
           alt=""
           className=" rounded-lg w-[350px] h-[350px] mx-auto mix-blend-lighten"
         />
-        <h1 className="text-text_highlight font-thin px-5 pb-5 text-2xl">
+        <div className="border-[3px] border-text_highlight w-full"></div>
+        <h1 className="text-text_highlight font-thin px-5 pb-5 text-2xl mt-2">
           {" "}
           {` ----- MY SERVICES -----`}{" "}
         </h1>

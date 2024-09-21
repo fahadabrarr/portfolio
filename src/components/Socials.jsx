@@ -2,8 +2,8 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedin />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/fahadabrarr" },
+  { icon: <FaLinkedin />, path: "https://www.linkedin.com/fahadabrarr" },
   { icon: <FaTwitter />, path: "" },
 ];
 const Social = () => {

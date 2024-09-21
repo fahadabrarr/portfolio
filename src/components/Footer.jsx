@@ -1,3 +1,4 @@
+import Social from "./Socials";
 const Footer = () => {
   return (
     <footer className="flex left-0 w-full  items-center z-40 bg-[#1E201E] pb-10">
@@ -10,16 +11,23 @@ const Footer = () => {
           />
         </div>
         <div className="text-center flex-col gap-3  items-center justify-between">
+          <Social />
           <p className="gap-3 py-3">@ 2024 all rights reserved</p>
           <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
             <li>
-              <a href="">facebook</a>
+              <a href="" className="text-2xl text-text_highlight">
+                --------
+              </a>
             </li>
             <li>
-              <a href="">linkedin</a>
+              <a href="" className="text-2xl text-text_highlight">
+                --------
+              </a>
             </li>
             <li>
-              <a href="">twitter</a>
+              <a href="" className="text-2xl text-text_highlight">
+                --------
+              </a>
             </li>
           </ul>
         </div>
